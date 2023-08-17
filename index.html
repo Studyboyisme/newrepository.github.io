@@ -1,0 +1,304 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>潮汕旅游网</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+	<script>
+		$().ready(function(){
+			//导航栏的下拉菜单
+			$(".nav>li").hover(function(){
+				$(this).children("ul").stop().slideDown();
+			},function(){
+				$(this).children("ul").stop().slideUp();
+			});
+			
+			//banner 的自动播放
+			function changeImg(a){
+				$(".ul_banner li").eq(a).fadeIn().siblings().fadeOut();
+			}
+			
+			var step = 0;
+			changeImg(step);
+			setInterval(function(){ //设置计时器
+				step++;
+				if(step == 8){
+					step = 0;
+				}
+				changeImg(step);	
+			},2000);
+			
+			//点击图片添加滤镜
+			$(".c1").mouseover(function(){
+				$(".c1").addClass("img_filter");
+			});
+			$(".c1").mouseleave(function(){
+				$(".c1").removeClass("img_filter");
+			});
+			
+			$(".c2_1").mouseover(function(){
+				$(".c2_1").addClass("img_filter");
+			});
+			$(".c2_1").mouseleave(function(){
+				$(".c2_1").removeClass("img_filter");
+			});
+			
+			$(".c2_2").mouseover(function(){
+				$(".c2_2").addClass("img_filter");
+			});
+			$(".c2_2").mouseleave(function(){
+				$(".c2_2").removeClass("img_filter");
+			});
+			
+			$(".c3").mouseover(function(){
+				$(".c3").addClass("img_filter");
+			});
+			$(".c3").mouseleave(function(){
+				$(".c3").removeClass("img_filter");
+			});
+			
+			$(".c4_1").mouseover(function(){
+				$(".c4_1").addClass("img_filter");
+			});
+			$(".c4_1").mouseleave(function(){
+				$(".c4_1").removeClass("img_filter");
+			});
+			
+			$(".c4_2").mouseover(function(){
+				$(".c4_2").addClass("img_filter");
+			});
+			$(".c4_2").mouseleave(function(){
+				$(".c4_2").removeClass("img_filter");
+			});
+			
+			$(".c4_3").mouseover(function(){
+				$(".c4_3").addClass("img_filter");
+			});
+			$(".c4_3").mouseleave(function(){
+				$(".c4_3").removeClass("img_filter");
+			});
+			
+			$(".c4_4").mouseover(function(){
+				$(".c4_4").addClass("img_filter");
+			});
+			$(".c4_4").mouseleave(function(){
+				$(".c4_4").removeClass("img_filter");
+			});
+			
+			$(".c5").mouseover(function(){
+				$(".c5").addClass("img_filter");
+			});
+			$(".c5").mouseleave(function(){
+				$(".c5").removeClass("img_filter");
+			});
+			
+		
+		
+		});
+	</script>
+</head>
+	
+<body>
+	<div class="mainmenu">
+		<div class="center">
+			<img src="image/logo.png" class="mylogo">
+			<ul class="nav">
+				<li class="myLi_1">
+					<a href="#"><strong>首页</strong></a>
+				</li>
+				<li class="myLi">
+					<a href="sight.html"><strong>景点</strong></a>
+					<ul class="myUl">
+						<li><a href="#">A级景区</a></li>
+						<li><a href="#">主题乐园</a></li>
+						<li><a href="#">遗迹古产</a></li>
+						<li><a href="#">名博科教</a></li>
+					</ul>
+				</li>
+				<li class="myLi">
+					<a href="food.html"><strong>美食</strong></a>
+					<ul class="myUl">
+						<li><a href="#">地道美食</a></li>
+						<li><a href="#">私房佳肴</a></li>
+						<li><a href="#">海鲜排挡</a></li>
+						<li><a href="#">特色小吃</a></li>
+					</ul>
+				</li>
+				<li class="myLi">
+					<a href="culture.html"><strong>文化</strong></a>
+					<ul class="myUl">
+						<li><a href="#">潮汕文化</a></li>
+						<li><a href="#">潮汕风俗</a></li>
+						<li><a href="#">潮汕工艺</a></li>
+						<li><a href="#">潮汕特产</a></li>
+					</ul>
+				</li>
+				<li class="myLi">
+					<a href="travel_tips.html"><strong>攻略</strong></a>
+					<ul class="myUl">
+						<li><a href="#">景点推荐</a></li>
+						<li><a href="#">美食推荐</a></li>
+						<li><a href="#">打卡胜地</a></li>
+						<li><a href="#">自驾游行</a></li>
+					</ul>
+				</li>
+				<li class="login_li"><a href="login.html">登录</a>
+					<a href="register.html">| 注册</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="header">
+		<div class="header_l"></div>
+		<div class="header_r">
+			<ul class="ul_banner">
+				<li><a href="#"><img src="image/banner1.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner2.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner3.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner4.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner5.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner2.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner7.jpg" class="banner_img"></a></li>
+				<li><a href="#"><img src="image/banner8.jpg" class="banner_img"></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="body">
+		<div class="top">
+			<div class="top_1"><h1>———  旅游向导  ———</h1></div>
+			<div class="top_2">
+				<div class="t1">
+					<img src="image/导3.jpg" class="img1">
+					<p class="myP"><strong>景点</strong></p>
+					<div class="myTxt1">
+						<ul>
+						<li><img src="image/li.png"><a href="#">A级景区</a></li>
+						<li><img src="image/li.png"><a href="#">主题乐园</a></li>
+						</ul>
+					</div>
+					<div class="myTxt2">
+						<ul>
+						<li><img src="image/li.png"><a href="#">遗迹古产</a></li>
+						<li><img src="image/li.png"><a href="#">名博科教</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="t2">
+					<img src="image/导2.jpg" class="img2">
+					<p class="myP"><strong>线路</strong></p>
+					<div class="myTxt1">
+						<ul>
+						<li><img src="image/li.png"><a href="#">潮州</a></li>
+						<li><img src="image/li.png"><a href="#">汕头</a></li>
+						</ul>
+					</div>
+					<div class="myTxt2">
+						<ul>
+						<li><img src="image/li.png"><a href="#">揭阳</a></li>
+						<li><img src="image/li.png"><a href="#">汕尾</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="t3">
+					<img src="image/导4.jpg" class="img2">
+					<p class="myP"><strong>美食</strong></p>
+					<div class="myTxt1">
+						<ul>
+						<li><img src="image/li.png"><a href="#">地道美食</a></li>
+						<li><img src="image/li.png"><a href="#">私房佳肴</a></li>
+						</ul>
+					</div>
+					<div class="myTxt2">
+						<ul>
+						<li><img src="image/li.png"><a href="#">海鲜排挡</a></li>
+						<li><img src="image/li.png"><a href="#">特色小吃</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="t4">
+					<img src="image/导5.jpg" class="img2">
+					<p class="myP"><strong>文化</strong></p>
+					<div class="myTxt1">
+						<ul>
+						<li><img src="image/li.png"><a href="#">潮汕文化</a></li>
+						<li><img src="image/li.png"><a href="#">潮汕风俗</a></li>
+						</ul>
+					</div>
+					<div class="myTxt2">
+						<ul>
+						<li><img src="image/li.png"><a href="#">潮汕工艺</a></li>
+						<li><img src="image/li.png"><a href="#">潮汕特产</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="t5">
+					<img src="image/导6.jpg" class="img2">
+					<p class="myP"><strong>攻略</strong></p>
+					<div class="myTxt1">
+						<ul>
+						<li><img src="image/li.png"><a href="#">景点推荐</a></li>
+						<li><img src="image/li.png"><a href="#">美食推荐</a></li>
+						</ul>
+					</div>
+					<div class="myTxt2">
+						<ul>
+						<li><img src="image/li.png"><a href="#">打卡胜地</a></li>
+						<li><img src="image/li.png"><a href="#">自驾游行</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="center">
+			<div class="top_1"><h1>———  热门推荐  ———</h1></div>
+			<div class="center_1">
+				<a href="sight.html"><div class="c1"><h6>潮州古城</h6></div></a>
+				<a href="#"><div class="c2_1"><h6>南澳岛</h6></div></a>
+				<a href="#"><div class="c2_2"><h6>汕头小公园</h6></div></a>
+				<a href="#"><div class="c3"><h6>牌坊街</h6></div></a>
+				
+				<a href="#"><div class="c4_1"><h6>广济楼</h6></div></a>
+				<a href="#"><div class="c4_2"><h6>开元寺</h6></div></a>
+				<a href="#"><div class="c4_3"><h6>韩愈纪念馆</h6></div></a>
+				<a href="#"><div class="c4_4"><h6>汕头老城</h6></div></a>
+				<a href="#"><div class="c5"><h6>揭阳楼</h6></div></a>
+			</div>
+		</div>
+		<div class="bottom">
+			<div class="top_1">
+				<h1>———  游记攻略  ———</h1>
+				<p>独行或同游，聪明的人与你在一起</p>
+				<a href="travel_tips.html" class="myUrl"> More>> </a>
+			</div>
+			<div class="bottom_1">
+				<a href="travel_tips.html"><div class="b1_1"></div></a>
+				<div class="b11"><a href="travel_tips.html">舌尖上的潮汕</a>
+				<br><img src="image/地标.png" class="b11_img">潮汕</div>
+			</div>
+			<div class="bottom_1">
+				<a href="travel_tips.html"><div class="b1_2"></div></a>
+				<div class="b11"><a href="travel_tips.html">海岛奇遇记</a>
+				<br><img src="image/地标.png" class="b11_img">潮汕</div>
+			</div>
+			<div class="bottom_1">
+				<a href="travel_tips.html"><div class="b1_3"></div></a>
+				<div class="b11"><a href="travel_tips.html">走街串巷，打卡胜地</a>
+				<br><img src="image/地标.png" class="b11_img">潮汕</div>
+			</div>
+			<div class="bottom_2">
+				<a href="travel_tips.html"><div class="b1_4"></div></a>
+				<div class="b11"><a href="travel_tips.html">遇见老城的美</a>
+				<br><img src="image/地标.png" class="b11_img">潮汕</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer1"></div>
+		<div class="footer2">
+			<div><p class="p1">通讯地址：广州市海珠区新港中路351号  邮编：510303  粤icp备05008839</p><br>
+				<p>广东第二师范学院版权所有CopyRight©2019,GUANGDONG UNIVERSITY OF EDUCATION</p></div>
+		</div>
+	</div>
+</body>
+</html>
